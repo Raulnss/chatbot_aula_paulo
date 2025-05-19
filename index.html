@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teste.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script defer src="lupa.js"></script>
+    <style>
+        .btn {
+            background-color: white;
+        }
+
+        /* Drawer minimalista */
+        .drawer {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: -200px;
+            background-color: #f0f0f0;
+            transition: 0.3s;
+            padding-top: 20px;
+        }
+
+        .drawer.open {
+            left: 0;
+        }
+
+        .drawer a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu-toggle {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bac">
+    <header>
+    <!-- Botão para abrir o menu -->
+    <button class="menu-toggle" onclick="toggleDrawer()">Filtro de Daltonismo</button>
+
+    <!-- Drawer -->
+    <nav id="drawer" class="drawer">
+      <p> <h3>Selecione o filtro para daltonismo que melhor se aplica a você:</h3></p>
+      <button class="btn" style="width: 110px; height: 24px;" onclick="changeFilter('protanopia')">Protanopia</button>
+      <br>
+      <button class="btn" style="width: 110px; height: 24px;" onclick="changeFilter('deuteranopia')">Deuteranopia</button>
+      <br>
+      <button class="btn" style="width: 110px; height: 24px;" onclick="changeFilter('tritanopia')">Tritanopia</button>
+      <br>
+      <button class="btn" style="width: 110px; height: 24px;" onclick="changeFilter('high-contrast')">Alta Contraste</button>
+      <br>
+      <button class="btn" style="width: 110px; height: 24px;" onclick="removeFilter()">Remover Filtro</button> 
+      <br>
+      <button class="btn" style="width: 110px; height: 24px;" onclick="toggleDrawer()">Fechar</button>
+    </nav>
+    </header>
+    <br><br>
+    <section>
+    <main>
+        <center>
+          <p><h1>Converce com alguns personagens de Jujutsu Kaisen</h1></p>
+            <a href="Yuji.html"><button class="btn" style="background-image: url(assets/Yuuji_Itadori_rosto.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; margin-top: 100px;"><h1><br><br><br><br><br><br>Falar com o Yuji Itadori</h1></button></a>
+            <a href="Satoru.html"><button class="btn" style="background-image: url(assets/Gojo.jpg); background-size: cover; background-repeat: no-repeat; height: 200px;margin-top: 100px;"><h1><br><br><br><br><br><br>Falar com o Satoru Gojo</h1></button></a>
+            <a href="Megumi.html"><button class="btn" style="background-image: url(assets/megumi.jpg); background-size: cover; background-repeat: no-repeat; height: 200px;margin-top: 100px;"><h1><br><br><br><br><br><br>Falar com o Megumi Fushiguro</h1></button></a>
+        </center>
+    </main>
+    </section>
+    <footer>
+    <script>
+        function changeFilter(filter) {
+            document.body.classList = '';
+            document.body.classList.add(filter);
+        }
+
+        function removeFilter() {
+            document.body.classList = '';
+        }
+
+        function toggleDrawer() {
+            document.getElementById('drawer').classList.toggle('open');
+        }
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

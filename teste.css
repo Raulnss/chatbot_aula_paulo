@@ -1,0 +1,19 @@
+/* Filtro para Protanopia (dificuldade em perceber o vermelho) */
+.protanopia {
+    filter: contrast(100%) brightness(100%) saturate(50%) hue-rotate(-40deg);
+}
+
+/* Filtro para Deuteranopia (dificuldade em perceber o verde) */
+.deuteranopia {
+    filter: contrast(100%) brightness(100%) saturate(50%) hue-rotate(90deg);
+}
+
+/* Filtro para Tritanopia (dificuldade em perceber o azul) */
+.tritanopia {
+    filter: contrast(100%) brightness(100%) saturate(50%) hue-rotate(180deg);
+}
+
+/* Filtro para aumentar o contraste (útil para vários tipos de daltonismo) */
+.high-contrast {
+    filter: contrast(200%) brightness(100%);
+}
