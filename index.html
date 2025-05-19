@@ -3,104 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="teste.css">
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-    <script defer src="lupa.js"></script>
+    <title>Farinhas mais usadas na cozinha</title>
     <style>
-        .btn {
-            background-color: white;
-        }
-
-        /* Drawer minimalista */
-        .drawer {
-            height: 100%;
-            width: 200px;
-            position: fixed;
-            top: 0;
-            left: -200px;
-            background-color: #f0f0f0;
-            transition: 0.3s;
-            padding-top: 20px;
-        }
-
-        .drawer.open {
-            left: 0;
-        }
-
-        .drawer a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-        }
-
-        .menu-toggle {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
+        .card{box-shadow: 2px 2px 6px ;}
     </style>
 </head>
-<body class="bac">
+<body>
     <header>
-    <!-- Botão para abrir o menu -->
-    <button class="menu-toggle" onclick="toggleDrawer()">Filtro de Daltonismo</button>
-
-    <!-- Drawer -->
-    <nav id="drawer" class="drawer">
-      <p> <h3>Selecione o filtro para daltonismo que melhor se aplica a você:</h3></p>
-      <button class="btn" style="width: 110px; height: 24px;" onclick="changeFilter('protanopia')">Protanopia</button>
-      <br>
-      <button class="btn" style="width: 110px; height: 24px;" onclick="changeFilter('deuteranopia')">Deuteranopia</button>
-      <br>
-      <button class="btn" style="width: 110px; height: 24px;" onclick="changeFilter('tritanopia')">Tritanopia</button>
-      <br>
-      <button class="btn" style="width: 110px; height: 24px;" onclick="changeFilter('high-contrast')">Alta Contraste</button>
-      <br>
-      <button class="btn" style="width: 110px; height: 24px;" onclick="removeFilter()">Remover Filtro</button> 
-      <br>
-      <button class="btn" style="width: 110px; height: 24px;" onclick="toggleDrawer()">Fechar</button>
-    </nav>
+        <h1>Farinhas mais usadas na cozinha</h1>
     </header>
-    <br><br>
     <section>
-    <main>
-        <center>
-          <p><h1>Converce com alguns personagens de Jujutsu Kaisen</h1></p>
-            <a href="Yuji.html"><button class="btn" style="background-image: url(Yuuji_Itadori_rosto.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; margin-top: 100px;"><h1><br><br><br><br><br><br>Falar com o Yuji Itadori</h1></button></a>
-            <a href="Satoru.html"><button class="btn" style="background-image: url(Gojo.jpg); background-size: cover; background-repeat: no-repeat; height: 200px;margin-top: 100px;"><h1><br><br><br><br><br><br>Falar com o Satoru Gojo</h1></button></a>
-            <a href="Megumi.html"><button class="btn" style="background-image: url(megumi.jpg); background-size: cover; background-repeat: no-repeat; height: 200px;margin-top: 100px;"><h1><br><br><br><br><br><br>Falar com o Megumi Fushiguro</h1></button></a>
-        </center>
-    </main>
+        <div class="card">
+            <p><h2>Farinha de trigo</h2></p>
+            <p>
+                A farinha de trigo é um pó fino obtido da moagem do grão de trigo
+            </p>
+            <img src="trigo.jpg" alt="Farinha de trigo">
+        </div>
+        <div>
+            <p><h2>Farinha de rosca</h2></p>
+            <p>
+                Diferentemente de outros tipos de farinha, provenientes de grãos, raízes e até oleaginosas, a farinha de rosca é feita pela moagem de pão seco
+            </p>
+            <img src="rosca.jpg" alt="Farinha de rosca">
+        </div>
+        <div>
+            <p><h2>Farinha de Mandioca</h2></p>
+            <p>
+                A farinha de mandioca, também conhecida como farinha-da-terra, farinha-de-pau, farinha-de-guerra, farinha suruí, farinha de mesa e farinha seca, é a farinha comum, branca e fina, feita a partir da raiz de mandioca.
+            </p>
+            <img src="mandioca.jpg" alt="Farinha de mandioca">
+        </div>
+        <div>
+            <p><h2>Farinha de milho</h2></p>
+            <p>
+                A farinha de milho é um produto da moagem do grão de milho, seja seco ou úmido, e é um ingrediente comum em diversas cozinhas, especialmente no Brasil, onde é utilizada em uma variedade de pratos.
+            </p>
+            <img src="milho.jpg" alt="Farinha de milho">
+        </div>
+        <div>
+            <p><h2>Farinha de Aveia</h2></p>
+            <p>
+               A farinha de aveia é extraída a partir da moagem interna dos grãos, descartando as fibras e mantendo os minerais, proteínas e carboidratos.
+            </p>
+            <img src="aveia.jpg" alt="Farinha de Aveia">
+        </div>
+        <div>
+            <p><h2>Farinha de arroz</h2></p>
+            <p>
+                farinha obtida a partir da moagem de grãos de arroz.
+            </p>
+            <img src="arroz.jpg" alt="Farinha de arroz">
+        </div>
+        <div>
+            <p><h2>Farinha de centeio</h2></p>
+            <p>
+               A farinha de centeio, também conhecida como farinha de centeio integral ou fina, é um ingrediente versátil e nutritivo usado na panificação e confeitaria.
+            </p>
+            <img src="centeio.jpg" alt="Farinha de centeio">
+        </div>
+        <div>
+            <p><h2>Farinha de grão de bico</h2></p>
+            <p>
+               A farinha de grão de bico é um alimento rico em nutrientes, sem glúten e pode ser utilizada como substituta da farinha de trigo em diversas receitas.
+            </p>
+            <img src="grao_de_bico.jpg" alt="Farinha de grão de bico">
+        </div>
+        <div>
+            <p><h2>Farinha de Amêndoa</h2></p>
+            <p>
+               A Farinha de Amêndoa é produzida a partir da moagem de amêndoas sem pele, após a extração do óleo da oleaginosa.
+            </p>
+            <img src="Amendoa.jpg" alt="Farinha de Amêndoa">
+        </div>
     </section>
     <footer>
-    <script>
-        function changeFilter(filter) {
-            document.body.classList = '';
-            document.body.classList.add(filter);
-        }
-
-        function removeFilter() {
-            document.body.classList = '';
-        }
-
-        function toggleDrawer() {
-            document.getElementById('drawer').classList.toggle('open');
-        }
-    </script>
-
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+        <div class="idi">
+            <div class="gtranslate_wrapper"></div>
+            <script>window.gtranslateSettings = {"default_language":"pt","native_language_names":true,"wrapper_selector":".gtranslate_wrapper","flag_style":"3d","alt_flags":{"pt":"brazil"}}</script>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
         </div>
-    </div>
     </footer>
 </body>
 </html>
